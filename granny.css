@@ -21,19 +21,53 @@ h1, h3{
 
 /* size */
 h1{
-    font-size: 9rem;
+    font-size: 9rem; 
+} /*Intro Titre*/
+h2{
+    font-size: 4.5rem;
+} /*Titre de bloc*/
+h3{
+    font-size: 3.5rem;
+} /*Titre d'article*/
+h4{
+    font-size: 2rem;
+} /*Intro Texte*/
+h5{
+    font-size: 1.3rem;
+} /*Menu Bouton*/
+p{
+    font-size: 1rem;
 }
 
+
+/* Interligne */
+h1, h2, h3 { line-height: 1em; }
+p { line-height: 1.5em; }
+
+
+/* Interlettrage */
+h1 { letter-spacing: -0.03em; }
+p { letter-spacing: 0.0123em; }
+
+/*…*/
 
 
 
 
 /*  -   -   -   -   -   -   -   -   -   -   -   -  */
 /*  COULEUR -   -   -   -   -   -   -   -   -   -  */
+:root{
+    --gris1: hsl(249deg, 15%, 95%);
+    --gris2: hsl(249deg, 15%, 80%);
+    --gris3: hsl(249deg, 15%, 60%);
+    --gris4: hsl(249deg, 15%, 35%);
+    --gris5: hsl(249deg, 15%, 20%);
+}
 
 
-
-
+body{
+    background: var(--gris1);
+}
 
 
 
