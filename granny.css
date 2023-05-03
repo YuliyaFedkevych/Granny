@@ -19,10 +19,9 @@ h1, h3{
 }
 
 
-/* size */
+/* size, align */
 h1{
     font-size: 9rem; 
-    color: white;
 } /*Intro Titre*/
 h2{
     font-size: 4.5rem;
@@ -33,10 +32,9 @@ h3{
 h4{
     font-size: 2rem;
     line-height: 2.3rem;
-    color: white;
 } /*Intro Texte*/
 h5{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: center;
 } /*Menu Bouton*/
 h6{
@@ -74,7 +72,10 @@ p { letter-spacing: 0.01em; }
 
 body{
     background: var(--gris1);
+    width: 80vw;
 }
+h1{color: white;}
+h4{color: white;}
 
 
 
@@ -84,3 +85,51 @@ body{
 /*  DESIGN  -   -   -   -   -   -   -   -   -   -  */
 
 /* Button design */
+
+.deco{
+   
+    box-shadow: 
+        -5px 5px 6px #333, 
+        5px -5px 6px #Fff;
+    
+    border-radius: 10px;
+    padding: 10px;
+
+    outline: 1px solid #333;
+    outline-offset: -2px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* MENU - - - - - - - -- - - - - - -- - - - -- - - - */
+.menu {
+    width: 100px; 
+    margin: 0.1 vw; 
+}
+.navigation {
+    display: flex;
+}
+
+/*
+a {
+    outline : none;
+  }
+  
+  nav a:link {
+    color: #000000;
+    text-decoration: none;
+  }
+  nav a:visited {
+    color: #000000;}
+  nav a:hover {
+    color: #000000;
+    font-weight: bolder;
+  }
+  
+  .col {
+    display: block;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 0rem;
+  
+  }
+  */
