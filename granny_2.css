@@ -141,20 +141,16 @@ nav a:hover {
     box-shadow: 
         -5px 5px 6px #a49f9f, inset, 
         5px -5px 6px #ffffff inset;
-    border-radius: 10px;
-    padding: 10px 20px 10px 20px;
-
     border: 1px solid #333;
     outline-offset: -2px;
 }
 .deco:active{
+    color: #000000;
     background-color:#A78CAD;
     box-shadow: 
         -5px 5px 6px #a49f9f, inset, 
         5px -5px 6px #ffffff inset;
     border-radius: 10px;
-    padding: 10px 20px 10px 20px;
-
     border-radius: 1px solid #333;
     outline-offset: -2px;
 }
