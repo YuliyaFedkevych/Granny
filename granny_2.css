@@ -1,0 +1,173 @@
+
+
+/*  -   -   -   -   -   -   -   -   -   -   -   -  */
+/*  TYPOGRAPHIE -   -   -   -   -   -   -   -   -  */
+
+
+/* Fraunces Font */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;1,700&display=swap');
+
+/* Lato font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h3{
+    font-family: 'Fraunces', serif;
+}
+
+
+/* size, alignment */
+/*Intro Titre*/
+h1{
+    font-size: 7rem; 
+    padding: 30px 30px 0px 50px;
+} 
+/*Titre de bloc*/
+h2{
+    font-size: 3.5em;
+} 
+/*Titre d'article*/
+h3{
+    font-size: 3.5rem;
+} 
+/*Texte Intro*/
+h4{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 0px 400px 10px 50px;
+} 
+/*Texte Légende*/
+h6{
+    font-size: 0.8rem;
+}
+/*Bouton Navigation*/
+nav a{
+    font-size: 1.2rem;
+    text-align: center;
+    white-space: nowrap;
+} 
+/*Texte courant*/
+p{
+    font-size: 1rem;
+}
+
+
+/* Interligne */
+h1, h2, h3 { line-height: 1em; }
+p { line-height: 1.5em; }
+
+
+/* Interlettrage */
+h1 { letter-spacing: 0.03em; }
+p { letter-spacing: 0.01em; }
+
+/*…*/
+
+
+
+
+/*  -   -   -   -   -   -   -   -   -   -   -   -  */
+/*  COULEUR -   -   -   -   -   -   -   -   -   -  */
+:root{
+    --gris1: hsl(249deg, 15%, 95%);
+    --gris2: hsl(249deg, 15%, 80%);
+    --gris3: hsl(249deg, 15%, 60%);
+    --gris4: hsl(249deg, 15%, 35%);
+    --gris5: hsl(249deg, 15%, 20%);
+}
+
+
+body{
+    background: var(--gris1);
+}
+
+h1{color: white;}
+h4{color: white;}
+
+
+
+
+
+/*  -   -   -   -   -   -   -   -   -   -   -   -  */
+/*  DESIGN  -   -   -   -   -   -   -   -   -   -  */
+
+/* Button design */
+
+.deco{
+   
+    box-shadow: 
+        -5px 5px 6px #a49f9f, 
+        5px -5px 6px #Fff,
+        0 0 0 1px #000000 inset;
+    
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+
+   /* border: 1px solid #333;*/
+
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - -*/
+/* MENU. Mise-en-page - - - - - - - -- - - - - - -- - - - -- - - - */
+
+.nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    position: sticky;
+}
+a {
+    outline: none;
+  }
+nav a:link {
+    color: #000000;
+    text-decoration: none;
+  }
+nav a:active {
+    color: #000000;
+}
+
+nav a:hover {
+    color: #000000;
+    font-weight: bolder;
+  }
+
+.deco:hover{
+    color: #000000;
+    background-color: var(--gris2);
+    box-shadow: 
+        -5px 5px 6px #a49f9f, inset, 
+        5px -5px 6px #ffffff inset;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+
+    border: 1px solid #333;
+    outline-offset: -2px;
+}
+.deco:active{
+    background-color:#A78CAD;
+    box-shadow: 
+        -5px 5px 6px #a49f9f, inset, 
+        5px -5px 6px #ffffff inset;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+
+    border-radius: 1px solid #333;
+    outline-offset: -2px;
+}
+.deco:visited{
+    color: #000000;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*
+
+  
+  
+  
+  
+  */

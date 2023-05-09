@@ -21,25 +21,27 @@ h1, h3{
 
 /* size, align */
 h1{
-    font-size: 9rem; 
+    font-size: 7rem; 
+    padding: 30px 30px 0px 50px;
 } /*Intro Titre*/
 h2{
-    font-size: 4.5rem;
+    font-size: 3.5em;
 } /*Titre de bloc*/
 h3{
     font-size: 3.5rem;
 } /*Titre d'article*/
 h4{
-    font-size: 2rem;
-    line-height: 2.3rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 0px 400px 10px 50px;
 } /*Intro Texte*/
-h5{
-    font-size: 1.2rem;
-    text-align: center;
-} /*Menu Bouton*/
 h6{
     font-size: 0.8rem;
 }
+a{
+    font-size: 1rem;
+    text-align: center;
+} /*Menu Bouton*/s
 p{
     font-size: 1rem;
 }
@@ -72,7 +74,6 @@ p { letter-spacing: 0.01em; }
 
 body{
     background: var(--gris1);
-    width: 80vw;
 }
 h1{color: white;}
 h4{color: white;}
@@ -84,37 +85,91 @@ h4{color: white;}
 /*  -   -   -   -   -   -   -   -   -   -   -   -  */
 /*  DESIGN  -   -   -   -   -   -   -   -   -   -  */
 
+body{
+    max-width: 60rem;
+    margin: auto;
+    padding-bottom:  10rem;
+}
+
 /* Button design */
+.container {
+    position: relative;
+}
+#photoopener {
+    position: absolute;
+    z-index: -1;
+
+}
+
+.boutique {
+    display: flexbox;
+}
+
+.photoBoutique{
+    width: 10rem;
+    height: 10rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
 
 .deco{
-   
-    box-shadow: 
-        -5px 5px 6px #333, 
+   box-shadow: 
+        -5px 5px 6px #a49f9f, 
         5px -5px 6px #Fff;
     
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
 
     outline: 1px solid #333;
     outline-offset: -2px;
 }
+/*
+
+.boutiqueCarte{
+    width: 200px;
+    height: 200px;
+}
+
+
+*/
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - -*/
 /* MENU - - - - - - - -- - - - - - -- - - - -- - - - */
 .menu {
-    width: 100px; 
-    margin: 0.1 vw; 
+ margin-right: 1rem; 
+   
 }
-.navigation {
+.nav {
     display: flex;
+    gap: 1rem;
+    justify-content: center;
+    position: sticky;
 }
 
+
+/* - - - - - - - - - - -- - - - - - - - -- - - - -  */
+/* INTERACTION - - - - -- - - - - - - - -- - - - -  */
+
+html{
+    scroll-behavior: smooth;
+}
 /*
 a {
     outline : none;
   }
   
-  nav a:link {
+  nav a:link 
+
+    box-shadow: 
+        -5px 5px 6px #a49f9f, 
+        5px -5px 6px #Fff;
+    
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+
+    outline: 1px solid #333;
+    outline-offset: -2px;
+}
     color: #000000;
     text-decoration: none;
   }
