@@ -169,7 +169,7 @@ nav a:hover {
         -2px 2px 4px #a49f9f 
         2px -2px 4px #ffffff inset;
     border-radius: 10px;
-    border-radius: 1px solid #333;
+    border: 1px solid #333;
     outline-offset: -2px;
 }
 .deco:visited{

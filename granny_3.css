@@ -1,0 +1,91 @@
+
+
+/*  -   -   -   -   -   -   -   -   -   -   -   -  */
+/*  TYPOGRAPHIE -   -   -   -   -   -   -   -   -  */
+
+
+/* Fraunces Font */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;1,700&display=swap');
+
+/* Lato font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background: var(--gris1);
+}
+
+
+/*  -   -   -   -   -   -   -   -   -   -   -   -  */
+/*  COULEUR -   -   -   -   -   -   -   -   -   -  */
+:root{
+    --gris1: hsl(249deg, 15%, 95%);
+    --gris2: hsl(249deg, 15%, 90%);
+    --gris3: hsl(249deg, 15%, 60%);
+    --gris4: hsl(249deg, 15%, 35%);
+    --gris5: hsl(249deg, 15%, 20%);
+}
+
+
+/* Button design */
+
+.button{
+    margin: auto;
+    margin-top: 100px;
+    width: fit-content;
+    min-width: 12rem;
+    box-shadow: 
+    -2px 2px 4px #a49f9f,
+    2px -2px 4px #Fff;
+    border-radius: 10px;
+    padding: 1px;
+    min-height: 3rem;
+}
+.textButton{
+    margin: auto;
+    text-align: center;
+    padding: 8px 10px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    white-space: nowrap;
+    height: 100%;
+}
+ 
+
+
+
+/* Button behavior */
+
+.button:hover{
+    background-color:  hsl(249deg, 15%, 96%);
+    box-shadow: 
+    -4px 4px 6px #a49f9f,
+    4px -4px 6px #Fff;
+   padding: 2px;
+}
+.button:hover .textButton{
+    border: 1px solid #3337;
+}
+
+.button:active{
+    background-color: var(--gris2);
+    box-shadow: 
+        -2px 2px 4px #a49f9f inset,
+        2px -2px 4px white inset;
+   padding: 2px;
+}
+.button:active .textButton{
+    border: 1px solid #3337;
+}
+
+.button:focus{
+    background-color: var(--gris2);
+    box-shadow: 
+        -2px 2px 4px #a49f9f inset,
+        2px -2px 4px white inset;
+   padding: 2px;
+}
+.button:focus .textButton{
+    border: 1px solid #3337;
+}
