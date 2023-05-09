@@ -48,6 +48,7 @@ nav a{
     font-size: 1.2rem;
     text-align: center;
     white-space: nowrap;
+
 } 
 /*Texte courant*/
 p{
@@ -95,18 +96,26 @@ h4{color: white;}
 /*  DESIGN  -   -   -   -   -   -   -   -   -   -  */
 
 /* Button design */
+#Logo{
+    width: 5rem;
+    padding-left: 5rem;
+}
+#Grandy{
+    font-family: 'Fraunces', serif;
+    font-size: 1.3rem;
+    padding-left: 5rem;
+}
 
 .deco{
    
     box-shadow: 
-        -5px 5px 6px #a49f9f, 
-        5px -5px 6px #Fff,
+        -5px 5px 6px #a49f9f; 
+        5px -5px 6px #Fff;
         0 0 0 1px #000000 inset;
-    
+  
     border-radius: 10px;
     padding: 10px 20px 10px 20px;
-
-   /* border: 1px solid #333;*/
+    border: 1px solid #333; 
 
 }
 
@@ -118,6 +127,7 @@ h4{color: white;}
     gap: 1rem;
     justify-content: center;
     position: sticky;
+    white-space: nowrap;
 }
 a {
     outline: none;
@@ -136,20 +146,20 @@ nav a:hover {
   }
 
 .deco:hover{
-    color: #000000;
+    color: #000000,
     background-color: var(--gris2);
     box-shadow: 
-        -5px 5px 6px #a49f9f, inset, 
-        5px -5px 6px #ffffff inset;
+        -2px 2px 4px #a49f9f inset; 
+        2px -2px 4px #ffffff inset;
     border: 1px solid #333;
     outline-offset: -2px;
 }
 .deco:active{
     color: #000000;
-    background-color:#A78CAD;
+    background-color:var(--gris2);
     box-shadow: 
-        -5px 5px 6px #a49f9f, inset, 
-        5px -5px 6px #ffffff inset;
+        -2px 2px 4px #a49f9f inset; 
+        2px -2px 4px #ffffff inset;
     border-radius: 10px;
     border-radius: 1px solid #333;
     outline-offset: -2px;
