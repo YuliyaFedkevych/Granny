@@ -8,18 +8,26 @@
 /* Lato font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* utilistaire */
+* {box-sizing: border-box;}
 
 /*  -   -   -   -   -   -   -   -   -   -   -   -  */
 /*  COULEUR -   -   -   -   -   -   -   -   -   -  */
 :root{
     --gris1: hsl(249deg, 15%, 96%);  
     --gris2: hsl(249deg, 15%, 95%);
-    --gris3: hsl(249deg, 15%, 80%);
+    --gris3: hsl(249deg, 15%, 90%);
     --gris4: hsl(249deg, 15%, 60%);
     --gris5: hsl(249deg, 15%, 35%);
     --gris6: hsl(249deg, 15%, 20%);
 }
 
+
+/* Microtypo */
+p {
+    orphans: 3;
+    line-height: 1.6em;
+}
 /*  -   -   -   -   -   -   -   -   -   -   -   -  */
 /*  DESIGN  -   -   -   -   -   -   -   -   -   -  */
 html{
@@ -30,6 +38,7 @@ body{
     background: var(--gris1);
 
     margin: 0;
+    max-width: 80vw;
 }
 header{
     margin-bottom: 2rem;
@@ -48,17 +57,19 @@ main {
     padding-left: 5rem;
 }
 
-/*Navigation button*/
+/* - - NAVIGATION BUTTON - - */
+a.button{ text-decoration: none;}
+
+
 
 .button{
     display: block;
 
     width: fit-content; 
-    min-width: 12rem;
-    min-height: 3rem;
+    min-width: 7rem;
+    min-height: 1rem;
 
     margin: auto;
-    margin-top: 100px;
     padding: 1px;
 
     box-shadow: 
@@ -66,7 +77,11 @@ main {
     2px -2px 4px #Fff;
     border-radius: 10px;
 }
+
+
 .textButton{
+ 
+    color: black;
     font-size: 1.2rem;
     text-align: center;
     white-space: nowrap;
@@ -74,24 +89,96 @@ main {
     height: 100%;
 
     margin: auto;
-    padding: 4px 5px 5px 5px;
+    padding: 4px 8px 5px 8px;
 
     border-radius: 10px;
     border: 1px solid var(--gris6);    
 }
 
+/*
+.textButton * {
+    margin: 0;
+}
+*/
 
-/*Navigation bar*/
-.nav {
-    overflow: hidden;
+/* Button behavior */
+/* L'ordre est important! */
+.button:visited{
+    color: black; 
+}
+.button:focus{
+    color: black; 
     background-color: var(--gris1);
+    padding: 2px;
+
+    box-shadow: 
+        -2px 2px 4px var(--gris4) inset,
+        2px -2px 4px white inset;
+}
+.button:focus .textButton{
+    border: 1px solid var(--gris6);
+}
+
+.button:hover{
+    color: black;
+    background-color:  var(--gris1);
+    padding: 2px;
+
+    box-shadow: 
+    -4px 4px 6px var(--gris4),
+    4px -4px 6px #Fff;
+}
+.button:hover .textButton{
+    border: 1px solid var(--gris6);
+}
+
+/* Current Page. IL faut ajouter un class "currentPage" */
+.button:active,
+.button.currentPage{
+    color: black;
+    background-color: var(--gris3);
+    padding: 2px;
+
+    box-shadow: 
+        -2px 2px 4px var(--gris4) inset,
+        2px -2px 4px white inset;
+   
+}
+.button:active .textButton,
+.button.currentPage .textButton{
+    border: 1px solid var(--gris6);
+}
+
+
+
+
+/* - - NAVIGATION BAR - - */
+
+body { max-width: 900px; margin: auto;}
+
+.nav {
+    margin-top: 0px;
+    background-color: var(--gris1);
+
     display: flex;
-    gap: 1rem;
     justify-content: center;
+
+    position: -webkit-sticky; /* Safari */
     position: sticky;
+
     top: 0px;
-    width: 100%;
+    /*width: 100%;*/
+    width: 900px;
     padding:1rem;
+   
+    gap: 1rem; /*distance entre les boutons*/
+    
+}
+@media (max-width: 768px) {
+    .nav {
+        /* display: flex; */
+        flex-direction: column;
+    }
 }
 
 
