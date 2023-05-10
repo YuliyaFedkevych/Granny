@@ -1,0 +1,99 @@
+
+
+/*  -   -   -   -   -   -   -   -   -   -   -   -  */
+/*  TYPOGRAPHIE -   -   -   -   -   -   -   -   -  */
+
+/* Fraunces Font */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;1,700&display=swap');
+/* Lato font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/*  -   -   -   -   -   -   -   -   -   -   -   -  */
+/*  COULEUR -   -   -   -   -   -   -   -   -   -  */
+:root{
+    --gris1: hsl(249deg, 15%, 96%);  
+    --gris2: hsl(249deg, 15%, 95%);
+    --gris3: hsl(249deg, 15%, 80%);
+    --gris4: hsl(249deg, 15%, 60%);
+    --gris5: hsl(249deg, 15%, 35%);
+    --gris6: hsl(249deg, 15%, 20%);
+}
+
+/*  -   -   -   -   -   -   -   -   -   -   -   -  */
+/*  DESIGN  -   -   -   -   -   -   -   -   -   -  */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background: var(--gris1);
+
+    margin: 0;
+}
+header{
+    margin-bottom: 2rem;
+}
+main {
+    margin-top: 30px;
+}
+
+#Logo{
+    width: 5rem;
+    padding-left: 5rem;
+}
+#Grandy{
+    font-family: 'Fraunces', serif;
+    font-size: 1.3rem;
+    padding-left: 5rem;
+}
+
+/*Navigation button*/
+
+.button{
+    display: block;
+
+    width: fit-content; 
+    min-width: 12rem;
+    min-height: 3rem;
+
+    margin: auto;
+    margin-top: 100px;
+    padding: 1px;
+
+    box-shadow: 
+    -2px 2px 4px var(--gris4),
+    2px -2px 4px #Fff;
+    border-radius: 10px;
+}
+.textButton{
+    font-size: 1.2rem;
+    text-align: center;
+    white-space: nowrap;
+
+    height: 100%;
+
+    margin: auto;
+    padding: 4px 5px 5px 5px;
+
+    border-radius: 10px;
+    border: 1px solid var(--gris6);    
+}
+
+
+/*Navigation bar*/
+.nav {
+    overflow: hidden;
+    background-color: var(--gris1);
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    padding:1rem;
+}
+
+
+
+
