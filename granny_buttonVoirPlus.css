@@ -1,0 +1,204 @@
+
+
+/*  -   -   -   -   -   -   -   -   -   -   -   -  */
+/*  TYPOGRAPHIE -   -   -   -   -   -   -   -   -  */
+
+/* Lato font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background: var(--gris1);
+}
+
+/* utilistaire */
+* {box-sizing: border-box;}
+
+/*  -   -   -   -   -   -   -   -   -   -   -   -  */
+/*  COULEUR -   -   -   -   -   -   -   -   -   -  */
+:root{
+    --gris1: hsl(249deg, 15%, 96%);
+    --gris2: hsl(249deg, 15%, 95%);
+    --gris3: hsl(249deg, 15%, 80%);
+    --gris4: hsl(249deg, 15%, 60%);
+    --gris5: hsl(249deg, 15%, 35%);
+    --gris6: hsl(249deg, 15%, 20%);
+    --violet1: hsl(300deg, 51%, 96%);
+    --violet2: hsl(300deg, 51%, 95%);
+    --violet3: hsl(300deg, 51%, 80%);
+    --violet4: hsl(300deg, 51%, 60%);
+    --violet5: hsl(300deg, 51%, 25%);
+    --violet6: hsl(300deg, 51%, 20%);
+    
+}
+
+
+/* Button design */
+
+
+/*
+    <a class="button">
+        <div class="textButton">
+            <h3>Accueil</h3>
+        </div>
+    </a>
+*/
+
+.buttonVoirPlus{
+    display: block;
+
+    width: fit-content; 
+    min-width: 12rem;
+    min-height: 3rem;
+
+    margin: auto;
+    margin-top: 100px;
+    padding: 1px;
+
+    background-color: #471747;
+
+    box-shadow: 
+    -2px 2px 4px var(--gris4),
+    2px -2px 4px var(--violet1);
+    border-radius: 10px;
+}
+.textButtonVoirPlus{
+    color: #Fff;
+
+    text-align: center;
+    white-space: nowrap;
+
+    height: 100%;
+
+    margin: auto;
+    padding: 8px 10px 10px 10px;
+
+    border-radius: 10px;
+    border: 1px solid #ffffff;    
+}
+ 
+
+
+
+/* Button behavior */
+
+.buttonVoirPlus:hover {
+    color: black;
+    background-color:  var(--violet5);
+    padding: 2px;
+
+    box-shadow: 
+    -4px 4px 6px var(--gris4),
+    4px -4px 6px var(--violet1);
+}
+.buttonVoirPlus:hover .textButtonVoirPlus {
+    border: 1px solid var(--gris2);
+}
+
+
+.buttonVoirPlus:active {
+    color:black;
+    background-color: var(--violet5);
+    padding: 2px;
+
+    box-shadow: 
+        -2px 2px 4px var(--violet6) inset,
+        2px -2px 4px var(--violet3) inset;
+   
+}
+.buttonVoirPlus:active .textButtonVoirPlus {
+    border: 1px solid var(--gris2);
+}
+
+
+.buttonVoirPlus:focus {
+    background-color: var(--violet2);
+    padding: 2px;
+
+    box-shadow: 
+    -2px 2px 4px var(--violet4) inset,
+    2px -2px 4px var(--violet1) inset;
+}
+.buttonVoirPlus:focus .textButtonVoirPlus {
+    border: 1px solid var(--gris2);
+}
+
+
+
+.button{
+    display: block;
+
+    width: fit-content; 
+    min-width: 12rem;
+    min-height: 3rem;
+
+    margin: auto;
+    margin-top: 100px;
+    padding: 1px;
+
+    box-shadow: 
+    -2px 2px 4px var(--gris4),
+    2px -2px 4px #Fff;
+    border-radius: 10px;
+}
+.textButton{
+    text-align: center;
+    white-space: nowrap;
+
+    height: 100%;
+
+    margin: auto;
+    padding: 8px 10px 10px 10px;
+
+    border-radius: 10px;
+    border: 1px solid var(--gris6);    
+}
+ 
+
+
+
+/* Button behavior */
+
+.button:hover {
+    color: black;
+    background-color:  var(--gris1);
+    padding: 2px;
+
+    box-shadow: 
+    -4px 4px 6px var(--gris4),
+    4px -4px 6px #Fff;
+}
+.button:hover .textButton {
+    border: 1px solid var(--gris6);
+}
+
+
+.button:active {
+    color:black;
+    background-color: var(--gris2);
+    padding: 2px;
+
+    box-shadow: 
+        -2px 2px 4px var(--gris4) inset,
+        2px -2px 4px white inset;
+   
+}
+.button:active .textButton {
+    border: 1px solid var(--gris6);
+}
+
+
+.button:focus {
+    background-color: var(--gris2);
+    padding: 2px;
+
+    box-shadow: 
+    -2px 2px 4px var(--gris4) inset,
+    2px -2px 4px white inset;
+}
+.button:focus .textButton {
+    border: 1px solid var(--gris6);
+}
+
+

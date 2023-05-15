@@ -88,7 +88,8 @@ a.button{ text-decoration: none;}
 
     height: 100%;
 
-    margin: auto;
+    
+    margin-top: 0;
     padding: 4px 8px 5px 8px;
 
     border-radius: 10px;
@@ -103,9 +104,7 @@ a.button{ text-decoration: none;}
 
 /* Button behavior */
 /* L'ordre est important! */
-.button:visited{
-    color: black; 
-}
+
 .button:focus{
     color: black; 
     background-color: var(--gris1);
