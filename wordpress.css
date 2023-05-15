@@ -1,0 +1,416 @@
+:root {
+    --gris1: hsl(249deg, 15%, 96%);
+    --gris2: hsl(249deg, 15%, 95%);
+    --gris3: hsl(249deg, 15%, 80%);
+    --gris4: hsl(249deg, 15%, 60%);
+    --gris5: hsl(249deg, 15%, 35%);
+    --gris6: hsl(249deg, 15%, 20%);
+    --violet1: hsl(300deg, 51%, 96%);
+    --violet2: hsl(300deg, 51%, 95%);
+    --violet3: hsl(300deg, 51%, 80%);
+    --violet4: hsl(300deg, 51%, 60%);
+    --violet5: hsl(300deg, 51%, 25%);
+    --violet6: hsl(300deg, 51%, 20%);
+}
+
+.wp-block-navigation .wp-block-navigation-item {
+    margin: 0;
+}
+
+
+/*button navbar*/
+
+.wp-block-navigation .wp-block-navigation-item {
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    min-width: 7rem;
+    min-height: 1rem;
+    margin: auto;
+    padding: 1px;
+    box-shadow: -2px 2px 4px var(--gris4), 2px -2px 4px #fff;
+    border-radius: 10px;
+}
+
+
+/*txtbutton navbar*/
+
+.wp-block-navigation .wp-block-navigation-item {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    white-space: nowrap;
+    height: 100%;
+    margin: auto;
+    padding: 4px 8px 5px 8px;
+    border-radius: 10px;
+    border: 1px solid var(--gris6);
+}
+
+
+/*button navbar*/
+
+.wp-block-navigation .wp-block-navigation-item {
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    min-width: 7rem;
+    min-height: 1rem;
+    margin: auto;
+    padding: 2px;
+    box-shadow: -2px 2px 4px var(--gris4), 2px -2px 4px #fff;
+    border-radius: 10px;
+}
+
+
+/*visitedbutton navbar*/
+
+.wp-block-navigation .wp-block-navigation-item:visited {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+    white-space: nowrap;
+    height: 100%;
+    margin-top: 0;
+    padding: 4px 8px 5px 8px;
+    border-radius: 10px;
+    border: 1px solid var(--gris6);
+}
+
+
+/*focusbutton navbar*/
+
+.wp-block-navigation .wp-block-navigation-item:focus,
+.wp-block-navigation .wp-block-navigation-item.current-menu-item {
+    text-decoration: none;
+    color: black;
+    background-color: var(--gris1);
+    padding: 2px;
+    box-shadow: -2px 2px 4px var(--gris4) inset, 2px -2px 4px white inset;
+}
+
+
+/*txtfocusbutton navbar*/
+
+.wp-block-navigation .wp-block-navigation-item:focus {
+    text-decoration: none;
+    border: 1px solid var(--gris6);
+}
+
+
+/*hoverbutton navbar*/
+
+.wp-block-navigation .wp-block-navigation-item:hover {
+    text-decoration: none !important;
+    color: black;
+    background-color: var(--gris1);
+    padding: 2px;
+    box-shadow: -4px 4px 6px var(--gris4), 4px -4px 6px #fff;
+    border: 1px solid var(--gris6);
+}
+
+.wp-block-navigation a:where(:not(.wp-element-button)):hover {
+    text-decoration: none;
+}
+
+
+/*txtactivebutton navbar*/
+
+.wp-block-navigation .wp-block-navigation-item:active {
+    text-decoration: none !important;
+    border: 1px solid var(--gris6);
+}
+
+
+/*navbar complet*/
+
+.wp-block-navigation__container:only-child,
+.wp-block-page-list:only-child {
+    text-decoration: none;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    width: 900px;
+    padding: 2px;
+    gap: 1rem;
+}
+
+-----
+/*boutonsautres*/
+
+---
+/*boutonsautres*/
+
+.wp-element-button {
+    display: block;
+    width: fit-content;
+    min-width: 12rem;
+    min-height: 3rem;
+    margin: auto;
+    margin-top: 100px;
+    padding: 1px;
+    box-shadow: -2px 2px 4px var(--gris4), 2px -2px 4px #fff;
+    border-radius: 10px;
+}
+
+
+/*txtboutonsautres*/
+
+.wp-element-button {
+    text-align: center;
+    white-space: nowrap;
+    height: 100%;
+    margin: auto;
+    padding: 8px 10px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--gris6);
+}
+
+
+/*hoverboutonsautres*/
+
+.wp-block-button .wp-block-button__link.wp-element-button:hover {
+    color: white;
+    background-color: var(--violet5);
+    padding: 8px 10px 10px 10px;
+    box-shadow: -4px 4px 6px var(--gris4), 4px -4px 6px var(--violet1);
+}
+
+
+/*hovertxtboutonsautres*/
+
+.wp-block-button .wp-block-button__link.wp-element-button:hover {
+    border: 1px solid var(--gris2);
+}
+
+
+/*activeboutonsautres*/
+
+.wp-block-button .wp-block-button__link.wp-element-button:active {
+    color: black;
+    background-color: var(--violet5);
+    padding: 2px;
+    box-shadow: -2px 2px 4px var(--violet6) inset, 2px -2px 4px var(--violet3) inset;
+}
+
+
+/*activetxtboutonsautres*/
+
+.wp-block-button .wp-block-button__link.wp-element-button:active {
+    border: 1px solid var(--gris2);
+}
+
+
+/*focusboutonsautres*/
+
+.wp-block-button .wp-block-button__link.wp-element-button:active {
+    background-color: var(--violet2);
+    padding: 2px;
+    box-shadow: -2px 2px 4px var(--violet4) inset, 2px -2px 4px var(--violet1) inset;
+}
+
+
+/*focustxtboutonsautres*/
+
+.wp-block-button .wp-block-button__link.wp-element-button:active {
+    border: 1px solid var(--gris2);
+}
+
+
+/*image shop acceuil*/
+
+.wp-block-image img,
+.wp-block-image .wp-block-image__crop-area {
+    box-shadow: -5px 5px 6px #a49f9f, 5px -5px 6px #fff, 0 0 0 1px #000000 inset;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+
+/*bouton shop acceuil*/
+
+.wp-block-button .wp-block-button__link {
+    display: block;
+    width: fit-content;
+    min-width: 12rem;
+    min-height: 3rem;
+    margin: auto;
+    margin-top: 100px;
+    padding: 1px;
+    background-color: #471747;
+    box-shadow: -2px 2px 4px var(--gris4), 2px -2px 4px var(--violet1);
+    border-radius: 10px;
+}
+
+
+/*txtbouton shop acceuil*/
+
+.wp-block-button .wp-block-button__link {
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    height: 100%;
+    margin: auto;
+    padding: 8px 10px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+}
+
+
+/*visitedbouton shop acceuil*/
+
+.wp-block-button .wp-block-button__link:hover {
+    text-decoration: none;
+    color: black;
+    background-color: var(--violet5);
+    padding: 2px;
+    box-shadow: -4px 4px 6px var(--gris4), 4px -4px 6px var(--violet1);
+}
+
+
+/*txthovervisitedbouton shop acceuil*/
+
+.wp-block-button .wp-block-button__link:hover {
+    border: 1px solid var(--gris2);
+}
+
+
+/*activevisitedbouton shop acceuil*/
+
+.wp-block-button .wp-block-button__link:active {
+    color: black;
+    background-color: var(--violet5);
+    padding: 2px;
+    box-shadow: -2px 2px 4px var(--violet6) inset, 2px -2px 4px var(--violet3) inset;
+}
+
+
+/*txtactivevisitedbouton shop acceuil*/
+
+.wp-block-button .wp-block-button__link:active {
+    border: 1px solid var(--gris2);
+}
+
+
+/*focusvisitedbouton shop acceuil*/
+
+.wp-block-button .wp-block-button__link:focus {
+    background-color: var(--violet2);
+    padding: 2px;
+    box-shadow: -2px 2px 4px var(--violet4) inset, 2px -2px 4px var(--violet1) inset;
+}
+
+
+/*focustxtvisitedbouton shop acceuil*/
+
+.wp-block-button .wp-block-button__link:focus {
+    border: 1px solid var(--gris2);
+}
+
+.wp-block-post-featured-image img {
+    box-shadow: -5px 5px 6px #a49f9f, 5px -5px 6px #fff, 0 0 0 1px #000000 inset;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+
+/*hoverbouton shop acceuil*/
+
+.wp-block-button .wp-block-button__link:hover {
+    background-color: var(--gris1);
+    padding: 2px;
+    box-shadow: -4px 4px 6px var(--gris4), 4px -4px 6px #fff;
+}
+
+
+/*hovertxtbouton shop acceuil*/
+
+.wp-block-button .wp-block-button__link:hover {
+    border: 1px solid var(--gris6);
+}
+
+
+/*activebouton shop acceuil*/
+
+.wp-block-button .wp-block-button__link:hover {
+    background-color: var(--gris2);
+    padding: 2px;
+    box-shadow: -2px 2px 4px var(--gris4) inset, 2px -2px 4px white inset;
+}
+
+
+/*activetxtbouton shop acceuil*/
+
+.wp-block-button .wp-block-button__link:hover {
+    border: 1px solid var(--gris6);
+}
+
+
+/*images acceuil*/
+
+.img {
+    box-shadow: -5px 5px 6px #a49f9f, 5px -5px 6px #fff, 0 0 0 1px #000000 inset;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+
+/*calendrier*/
+
+.wp-block-button.aligncenter,
+.wp-block-calendar {
+    box-shadow: -5px 5px 6px #a49f9f, 5px -5px 6px #fff, 0 0 0 1px #000000 inset;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+
+/*produits boutique*/
+
+.editor-styles-wrapper .wc-block-grid__products .wc-block-grid__product .wc-block-components-product-image img,
+.wc-block-components-product-image img {
+    box-shadow: -5px 5px 6px #a49f9f, 5px -5px 6px #fff, 0 0 0 1px #000000 inset;
+    border-radius: 10px;
+    padding: 5px 10px 5px 5px;
+}
+
+/????????/ .woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+    box-shadow: -5px 5px 6px #a49f9f, 5px -5px 6px #fff, 0 0 0 1px #000000 inset;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    border-top-color: black;
+}
+
+
+/*images profil gd-maman*/
+
+.wp-block-media-text__media img,
+.wp-block-media-text__media video {
+    box-shadow: -5px 5px 6px #a49f9f, 5px -5px 6px #fff, 0 0 0 1px #000000 inset;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+.wc-block-grid__product .wc-block-grid__product-image:not(.wc-block-components-product-image),
+.wc-block-grid__product .wc-block-grid__product-title {
+    color: black;
+}
+
+
+/*ajouterpanierproduit*/
+
+.woocommerce div.product form.cart button.single_add_to_cart_button,
+.woocommerce div.product form.cart button[name="add-to-cart"] {}
+
+.wp-block-post-content a:where(:not(.wp-element-button)) {
+    color: black;
+}
